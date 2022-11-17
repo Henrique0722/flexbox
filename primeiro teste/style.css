@@ -1,14 +1,42 @@
-.container{
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+}
+header{
+    height: 100px;
+}
+header > nav{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.726);
+    height: 100%;
+
+}
+header > nav > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+header> nav > a:hover{
+    transition: 0.4s;
+    background-color: rgba(128, 128, 128, 0.61);
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
 
-
-.bloco{
-    height: 250px;
-    width: 350px;
-    border: 1px solid black;
+    
+}
+.caixa{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
     margin: 10px;
+    height: 300px;
+    width: 350px;
+    border-radius: 6px;
 }
